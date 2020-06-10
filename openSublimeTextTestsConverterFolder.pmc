@@ -1,0 +1,23 @@
+﻿[PMC Code v5.0.5]|F5||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro2
+Groups=Start:1
+1|Run|C:\Program Files\Sublime Text 3\sublime_text.exe, D:\mySw\Fizzygum-all\Fizzygum-tests-converter|1|0|Run|||||
+2|[Pause]||1|250|Sleep|||||
+3|LAlt Down|{LAlt Down}|1|0|Send|||||
+4|[Pause]||1|250|Sleep|||||
+5|f|{f}|1|0|Send|||||
+6|[Pause]||1|250|Sleep|||||
+7|LAlt Up|{LAlt Up}|1|0|Send|||||
+8|[Pause]||1|250|Sleep|||||
+9|Down|{Down}|1|0|Send|||||
+10|[Pause]||1|250|Sleep|||||
+11|Down|{Down}|1|0|Send|||||
+12|[Pause]||1|250|Sleep|||||
+13|Enter|{Enter}|1|0|Send|||||
+14|[Pause]||1|250|Sleep|||||
+15|[Text]|D:\mySw\Fizzygum-all\Fizzygum-tests-converter|1|7|SendRaw|||||
+16|[Pause]||1|250|Sleep|||||
+17|Enter|{Enter}|1|0|Send|||||
+18|[Control]|TabLeft, |1|0|Control||A|||
+19|[Pause]||1|250|Sleep|||||
+20|Enter|{Enter}|1|0|Send|||||
+
