@@ -1,0 +1,38 @@
+﻿[PMC Code v5.0.5]|Numpad9||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Groups=Start:1
+1|Left Click|Left, 1, |2|10|Click|||||
+2|[Assign Variable]|searchPrefix := EvSrch_|1|0|Variable|||||
+3|[Pause]||1|10|Sleep|||||
+4|LControl Down|{LControl Down}|1|0|Send|||||
+5|c|{c}|1|0|Send|||||
+6|LControl Up|{LControl Up}|1|0|Send|||||
+7|[Pause]||1|15|Sleep|||||
+8|[Assign Variable]|searchString := %Clipboard%|1|0|Variable|||||
+9|StringLeft|startOfString, searchString, 15|1|0|StringLeft|||||
+010|[MsgBox]|%startOfString%|1|0|MsgBox|0||||
+11|Compare Variables|startOfString = %searchPrefix%|1|0|If_Statement|||||
+12|StringReplace|searchString, searchString, %searchPrefix%|1|0|StringReplace|||||
+13|StringReplace|searchString, searchString, MINUS, -, 1|1|0|StringReplace|||||
+14|StringReplace|searchString, searchString, tag_, tag:, 1|1|0|StringReplace|||||
+15|StringReplace|searchString, searchString, QUOTE, ", 1|1|0|StringReplace|||||
+16|StringReplace|searchString, searchString, _, $$$ $$$, 1|1|0|StringReplace|||||
+17|StringReplace|searchString, searchString, $$$, , 1|1|0|StringReplace|||||
+018|[Assign Variable]|searchString := RegExReplace(searchString, "_", " ")|1|0|Variable|Expression||--------------------------------------||
+19|[CommentBlock]|--------------------------------------|0|1|CommentBlock|||||
+020|WinActivate||1|333|WinActivate||ahk_class ENMainFrame|||
+021|[Pause]||1|10|Sleep|||||
+022|[Pause]||1|100|Sleep|||||
+023|Tab|{Tab}|1|0|ControlSend|ENAutoCompleteEditCtrl1|ahk_class ENMainFrame|||
+024|[Pause]||1|100|Sleep|||||
+025|LControl Down|{LControl Down}|1|0|Send|||||
+026|Enter|{Enter}|1|0|Send|||||
+027|LControl Up|{LControl Up}|1|0|Send|||||
+028|[Pause]||1|100|Sleep|||||
+029|WinActivate||1|333|WinActivate||ahk_class ENMainFrame|||
+30|[CommentBlock]|--------------------------------------|0|1|CommentBlock|||||
+31|[Pause]||1|10|Sleep|||||
+32|[Text]||1|0|ControlSetText|ENAutoCompleteEditCtrl1|ahk_exe Evernote.exe|||
+33|[Text]|%searchString%|1|0|ControlEditPaste|ENAutoCompleteEditCtrl1|ahk_exe Evernote.exe|||
+034|[MsgBox]|%searchString%|1|0|MsgBox|0||||
+35|[End If]|EndIf|1|0|If_Statement|||||
+

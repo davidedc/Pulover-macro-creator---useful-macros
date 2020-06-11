@@ -1,0 +1,8 @@
+﻿[PMC Code v5.0.5]|Numpad9||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Groups=Start:1
+1|Left Click|Left, 1, |1|10|Click|||||
+2|[Pause]||1|100|Sleep|||||
+3|LAlt Down|{LAlt Down}|1|0|Send|||||
+4|F4|{F4}|1|0|Send|||||
+5|LAlt Up|{LAlt Up}|1|0|Send|||||
+
