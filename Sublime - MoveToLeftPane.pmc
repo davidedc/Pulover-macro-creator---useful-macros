@@ -1,0 +1,11 @@
+﻿[PMC Code v5.0.5]|Numpad9||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Groups=Start:1
+1|LControl Down|{LControl Down}|1|0|Send|||||
+2|k|{k}|1|0|Send|||||
+3|LControl Up|{LControl Up}|1|0|Send|||||
+4|LControl Down|{LControl Down}|1|0|Send|||||
+5|LShift Down|{LShift Down}|1|0|Send|||||
+6|Left|{Left}|1|0|Send|||||
+7|LShift Up|{LShift Up}|1|0|Send|||||
+8|LControl Up|{LControl Up}|1|0|Send|||||
+
