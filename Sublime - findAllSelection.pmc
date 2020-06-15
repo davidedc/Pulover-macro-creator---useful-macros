@@ -1,15 +1,16 @@
 ﻿[PMC Code v5.0.5]|Numpad9||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
 Groups=Start:1
-1|LControl Down|{LControl Down}|1|0|Send|||||
-2|c|{c}|1|0|Send|||||
-3|LControl Up|{LControl Up}|1|0|Send|||||
-4|LShift Down|{LShift Down}|1|0|Send|||||
-5|LControl Down|{LControl Down}|1|0|Send|||||
-6|f|{f}|1|0|Send|||||
-7|LShift Up|{LShift Up}|1|0|Send|||||
-8|LControl Up|{LControl Up}|1|0|Send|||||
-9|LControl Down|{LControl Down}|1|0|Send|||||
-10|v|{v}|1|0|Send|||||
-11|LControl Up|{LControl Up}|1|0|Send|||||
-12|Enter|{Enter}|1|0|Send|||||
+01|[CommentBlock]|Sublime - findAllSelection - rev 1|0|1|CommentBlock|||||
+2|LControl Down|{LControl Down}|1|0|Send|||||
+3|c|{c}|1|0|Send|||||
+4|LControl Up|{LControl Up}|1|0|Send|||||
+5|LShift Down|{LShift Down}|1|0|Send|||||
+6|LControl Down|{LControl Down}|1|0|Send|||||
+7|f|{f}|1|0|Send|||||
+8|LShift Up|{LShift Up}|1|0|Send|||||
+9|LControl Up|{LControl Up}|1|0|Send|||||
+10|LControl Down|{LControl Down}|1|0|Send|||||
+11|v|{v}|1|0|Send|||||
+12|LControl Up|{LControl Up}|1|0|Send|||||
+13|Enter|{Enter}|1|0|Send|||||
 

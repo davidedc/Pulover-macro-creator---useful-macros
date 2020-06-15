@@ -1,15 +1,16 @@
 ﻿[PMC Code v5.0.5]|Numpad8||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
 Groups=Start:1
-1|[Assign Variable]|iniPath := c:\Users\david\Desktop\testini.ini|1|0|Variable|||||
-02|[Pause]||1|300|Sleep|||||
-3|IniRead|whichDesk, %iniPath%, aSectin, slackSize, narrow|1|0|IniRead|||||
-4|Evaluate Expression|whichDesk = "narrow"|1|0|If_Statement|||||
-5|WinMove|-2598, 0, 1340, 1436|1|333|WinMove||ahk_exe Slack.exe|||
-6|[Assign Variable]|whichDesk := wide|1|0|Variable|||||
-7|[Else]|Else|1|0|If_Statement|||||
-8|WinMove|-2551, 0, 549, 1408|1|333|WinMove||ahk_exe Slack.exe|||
-9|[Assign Variable]|whichDesk := narrow|1|0|Variable|||||
-10|[End If]|EndIf|1|0|If_Statement|||||
-11|WinActivate||1|333|WinActivate||ahk_exe Slack.exe|||
-12|IniWrite|%whichDesk%, %iniPath%, aSectin, slackSize|1|0|IniWrite|||||
+01|[CommentBlock]|Desktop - toggleWindowSize - rev 1|0|1|CommentBlock|||||
+2|[Assign Variable]|iniPath := c:\Users\david\Desktop\testini.ini|1|0|Variable|||||
+03|[Pause]||1|300|Sleep|||||
+4|IniRead|whichDesk, %iniPath%, aSectin, slackSize, narrow|1|0|IniRead|||||
+5|Evaluate Expression|whichDesk = "narrow"|1|0|If_Statement|||||
+6|WinMove|-2598, 0, 1340, 1436|1|333|WinMove||ahk_exe Slack.exe|||
+7|[Assign Variable]|whichDesk := wide|1|0|Variable|||||
+8|[Else]|Else|1|0|If_Statement|||||
+9|WinMove|-2551, 0, 549, 1408|1|333|WinMove||ahk_exe Slack.exe|||
+10|[Assign Variable]|whichDesk := narrow|1|0|Variable|||||
+11|[End If]|EndIf|1|0|If_Statement|||||
+12|WinActivate||1|333|WinActivate||ahk_exe Slack.exe|||
+13|IniWrite|%whichDesk%, %iniPath%, aSectin, slackSize|1|0|IniWrite|||||
 
